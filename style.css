@@ -93,7 +93,30 @@ a {
 }
 
 a:hover {
-  color: var(--coral);
+  /* Darker than the brand coral so hovered links keep 4.5:1 on cream. */
+  color: #b4472b;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--forest);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 1;
+  background: var(--forest);
+  color: var(--paper);
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.skip:focus {
+  top: 1rem;
 }
 
 .card {
@@ -104,8 +127,13 @@ a:hover {
   margin: 1.25rem 0;
 }
 
+.card h2,
 .card h3 {
   margin-top: 0;
+}
+
+.card h2 {
+  font-size: 1.05rem;
 }
 
 .card p:last-child {
@@ -176,6 +204,14 @@ footer a {
 
   .links a:hover {
     background: #a8ddcf;
+    color: #0c1917;
+  }
+
+  a:hover {
+    color: var(--coral);
+  }
+
+  .skip {
     color: #0c1917;
   }
 }
