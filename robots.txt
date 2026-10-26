@@ -1,0 +1,9 @@
+# Note: crawlers only read robots.txt at the domain root
+# (https://kdevelopment2026.github.io/robots.txt), so this file is not
+# authoritative for this project site. It is kept for reference and in case
+# the site moves to its own domain. Submit sitemap.xml in Google Search
+# Console and Bing Webmaster Tools instead.
+User-agent: *
+Allow: /
+
+Sitemap: https://kdevelopment2026.github.io/pet-routine-tracker/sitemap.xml
